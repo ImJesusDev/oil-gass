@@ -948,7 +948,8 @@ p.df{
 .animate{
 	height: 100%;
 	position: absolute;
-	left: 0;
+	left: -65px;
+	top: 17rem;
 }
 .animate-2{
 	height: 100%;

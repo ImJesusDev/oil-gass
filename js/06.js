@@ -100,16 +100,17 @@ function tiempo() {
 	var btn1 = document.getElementById("boton");
 	var btn2 = document.getElementById("boton-2");
 	var btn3 = document.getElementById("boton-3");
-	$(btn1).click(function drone() {
+	$(btn1).hover(function drone() {
 		var uav = document.getElementById("were");
 		if (btn1) {
 			$(uav).animate({
+				top: "0",
 				left: "+50px"
 			}, { duration: 3000 });
 		}
 
 	});
-	$(btn2).click(function dorne2() {
+	$(btn2).hover(function dorne2() {
 		var uav = document.getElementById("were");
 		var pos = 0;
 		if (pos == 0) {
@@ -118,7 +119,7 @@ function tiempo() {
 			}, { duration: 3000 });
 		}
 	});
-	$(btn3).click(function drone3() {
+	$(btn3).hover(function drone3() {
 		var uav = document.getElementById("were");
 		var pos = 0;
 		if (pos == 0) {
@@ -131,7 +132,7 @@ function tiempo() {
 
 	//animacion del drone carrusel 2
 	var btn4 = document.getElementById("boton-4");
-	$(btn4).click(function drone4() {
+	$(btn4).hover(function drone4() {
 		var uav = document.getElementById("uav");
 		var pos = 0;
 		if (pos == 0) {
@@ -147,7 +148,7 @@ function tiempo() {
 	var btn7 = document.getElementById("boton-7");
 	var btn8 = document.getElementById("boton-8");
 
-	$(btn5).click(function drone5() {
+	$(btn5).hover(function drone5() {
 		var uav = document.getElementById("uavs");
 		var pos = 0;
 		if (pos == 0) {
@@ -157,7 +158,7 @@ function tiempo() {
 		}
 	});
 
-	$(btn6).click(function drone6() {
+	$(btn6).hover(function drone6() {
 		var uav = document.getElementById("uavs");
 		var pos = 0;
 		if (pos == 0) {
@@ -166,7 +167,7 @@ function tiempo() {
 			}, { duration: 3000 });
 		}
 	});
-	$(btn7).click(function drone7() {
+	$(btn7).hover(function drone7() {
 		var uav = document.getElementById("uavs");
 		var pos = 0;
 		if (pos == 0) {
@@ -175,13 +176,15 @@ function tiempo() {
 			}, { duration: 3000 });
 		}
 	});
-	$(btn8).click(function drone8() {
+	$(btn8).hover(function drone8() {
 		var uav = document.getElementById("uavs");
 		var pos = 0;
 		if (pos == 0) {
 			$(uav).animate({
 				left: "800px"
 			}, { duration: 3000 });
+		}else if (pos > 600) {
+			console.log("paso");	
 		}
 	});
 
