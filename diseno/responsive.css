@@ -1,0 +1,96 @@
+@media (max-width:500px){
+    /*seccion de imagenes*/
+    .txt-indra, .txt-minsaid{
+        display: none;
+    }
+	.img-indra{
+		width: 100%;
+	}
+    /*carrusel*/
+    .uavs, .contenedor{
+        display: none;
+    }
+    .cuadro-rosado-carusel{
+        border-left: 34rem solid #e88aa2;
+    }
+    .cuadro-azul-oscuro{
+        border-left: 34rem solid #1a3b47;
+    }
+    .cuadro-azul{
+        border-left: 34rem solid #639fcb;
+    }
+    .position-one, .txt-carrusel{
+        top: 0;
+    }
+	.azul{
+		width: 100%;
+		max-width: 38%;
+		height: 56%;
+		max-height: 61%;
+		top: 0;
+		position:absolute;
+	}
+	.rosado{
+		width: 100%;
+		max-width: 38%;
+		height: 56%;
+		max-height: 61%;
+		top: -25rem;
+		position:relative;
+	}
+	.ind, .ing-2, .con-mis{
+		display: none;
+	}
+	
+	.aus {
+		top: 10px;
+		font-size: 13px;
+	}
+	.ssa{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+	}
+	.ins{
+		left: -22px !important;
+	}
+	.plan-li{
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 73%;
+		
+	}
+	h2.plant{
+		top: 37px;
+		right: 473px;
+	}
+	.regis-li{
+		left: 50%;
+		z-index: 1;
+		
+	}
+    /*presentacion de puertos*/
+	.menu-amarillo{
+		background-position: initial;
+	}
+    .cuadro-rosado{
+        border-left: 34rem solid #e88aa2;
+    }
+    .txt-puertos ul{
+        left: 2rem;
+    }
+    .txt-puertos > p{
+        left: 1rem;
+    }
+    .img-ingeniero{
+		left: 33%;
+	}
+	.dest{
+		top: 2.2rem;
+	}
+	.text-center >  img{
+		width: 65%;
+	}
+}
