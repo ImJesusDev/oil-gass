@@ -506,17 +506,13 @@ h2.puertos {
 	text-decoration: none;
 	font-size: 1.5rem;
 	font-family: "SohoGothicPro-Regular";
-
-
 }
-
-.regis-li > li  {
-	list-style: none;
-	
-}
-.regis-li > li a:hover{
-	color:pink;
-
+.regis-li ul li::after{
+	content: "";
+	width: 50px;
+    display: block;
+    border-bottom: 3px solid #fff;
+    margin: 0px 0;
 }
 h2.plant{
 	position: absolute;
@@ -1187,4 +1183,9 @@ p.df{
 
 .li-carrusel{
 	list-style: none;
+}
+.map{
+	text-align: center;
+	position: relative;
+	top: -16rem;
 }
