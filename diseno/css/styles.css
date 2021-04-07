@@ -36,6 +36,13 @@ video{
 	cursor: pointer;
 	font-size: 1.5rem;
 }
+.p-indra{
+	position: absolute;
+	top: 44rem;
+	text-align: center;
+	color: #FFEB80;
+	left: 26%;
+}
 
 .aus ul > li > a{
 	text-decoration: none;
@@ -606,10 +613,14 @@ h2.plant{
     top: -54rem;
     left: 648px;
 }
+.sgg{
+	position: relative;
+}
 @media (min-width: 768px){
 	.sgg{
 		display: flex;
 		margin-bottom: 8rem;
+
 		
 	}
 	.oil{
@@ -621,7 +632,7 @@ h2.plant{
 
 .ssa{
 	position: absolute;
-	left: 46rem;
+	right: 0;
 	top: 11rem;
 	z-index: 1;
 }

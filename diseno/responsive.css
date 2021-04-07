@@ -1,10 +1,27 @@
-@media (max-width:500px){
+@media (max-width:768px){
     /*seccion de imagenes*/
     .txt-indra, .txt-minsaid{
         display: none;
     }
-	.img-indra{
+	.img-indra, .img-minsaid{
 		width: 100%;
+	}
+	.img-minsaid{
+		left: 21px;
+	}
+	.aus, .ssa {
+		top: 10px;
+		font-size: 13px;
+		height: auto;
+	}
+	.ssa{
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 32%;
+	}
+	p.df{
+		left: 1rem;
 	}
     /*carrusel*/
     .uavs, .contenedor{
@@ -42,16 +59,7 @@
 		display: none;
 	}
 	
-	.aus {
-		top: 10px;
-		font-size: 13px;
-	}
-	.ssa{
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-	}
+	
 	.ins{
 		left: -22px !important;
 	}
@@ -97,3 +105,4 @@
 		width: 65%;
 	}
 }
+/*responsive */
