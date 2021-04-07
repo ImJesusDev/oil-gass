@@ -533,7 +533,8 @@ h2.plant{
 }
 .lib-regis{
 	position: relative;
-	top: 0px;
+	top: 05rem;
+	left: 1rem;
 }
 
 .dest{
@@ -1188,4 +1189,7 @@ p.df{
 	text-align: center;
 	position: relative;
 	top: -16rem;
+}
+.map img{
+	width: 100%;
 }

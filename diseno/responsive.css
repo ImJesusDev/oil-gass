@@ -78,6 +78,9 @@
     .cuadro-rosado{
         border-left: 34rem solid #e88aa2;
     }
+	.txt-puertos{
+		right: 1rem;
+	}
     .txt-puertos ul{
         left: 2rem;
     }
