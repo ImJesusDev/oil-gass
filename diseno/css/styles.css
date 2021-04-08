@@ -538,6 +538,10 @@ h2.plant{
 	font-size: xxx-large;
 	line-height: 47px;
 }
+.parrafo-toggle{
+	display: none;
+}
+
 .lib-regis{
 	position: relative;
 	top: 05rem;
@@ -885,6 +889,49 @@ p.df{
 .air{
 	width: 100%;
 }
+.active {
+	color: #ffeb80 !important;
+  }
+  .active-2 {
+	color: #87c0b6 !important;
+  }
+
+
+  /*secion mapa col*/
+.ocultar-txt{
+	display: none !important;
+}
+.info{
+	display: none !important;
+}
+.txt-informacion{
+	color: #fff;
+	position: absolute;
+	top: 2rem;
+}
+.mapa-col{
+	width: 100%;
+	height: 100%;
+}
+.mapa-col::-webkit-scrollbar{
+	display: none;
+}
+.st1:hover{
+	fill: #69bf66;
+}
+.st285:hover{
+	fill: #d37481;
+}
+.st281:hover{
+	fill: #00abb7;
+}
+.st289:hover{
+	fill: #a34581;
+}
+.st293:hover, .st291:hover{
+	fill: #00a3af;
+}
+
 
 
 /*responsive moviles*/

@@ -21,7 +21,7 @@
   <header>
     <div class="container">
       <video video autoplay loop muted>
-        <source src="video/Cabezote Oil&gas.mp4" type="video/mp4">
+        <source src="video/BannerRosa2.mp4" type="video/mp4">
       </video>
     </div>
   </header>
@@ -46,11 +46,11 @@
               defensa</p>
           </div>
           <div class="position-absolute blue aus">
-            <ul>
+            <ul class="gallery-1">
               <li><img src="img/INDRA.png" alt="" class="img-indra"></li>
-              <li><a onclick="miFuncion('def');" class="">Defensa y seguridad </a></li>
-              <li><a onclick="miFuncion('avion')" class="">Tráfico aéreo </a></li>
-              <li><a onclick="miFuncion('are')" class="">1er Radar baja cota</a></li>
+              <li><a id="def" onclick="miFuncion('def');" class="">Defensa y seguridad </a></li>
+              <li><a id="avion" onclick="miFuncion('avion')" class="">Tráfico aéreo </a></li>
+              <li><a id="are" onclick="miFuncion('are')" class="">1er Radar baja cota</a></li>
             </ul>
           </div>
         </div>
@@ -63,12 +63,12 @@
             </p>
           </div>
           <div class="ssa rose position-absolute">
-            <ul>
+            <ul class="gallery-2">
               <li><img class="img-minsaid" src="img/MINSAIT.png" alt=""></li>
-              <li><a onclick="cambiarFoto('tecnologias')" class="">Tecnologías</a></li>
-              <li><a onclick="cambiarFoto('conteo')" class="">Conteo electoral</a></li>
-              <li><a onclick="cambiarFoto('autos')" class="">Control CDA´S</a></li>
-              <li><a onclick="cambiarFoto('obrero')" class="">Protección de <br>infraestructura<br> critica
+              <li><a id="tecnologias" onclick="cambiarFoto('tecnologias')" class="">Tecnologías</a></li>
+              <li><a id="conteo" onclick="cambiarFoto('conteo')" class="">Conteo electoral</a></li>
+              <li><a id="autos" onclick="cambiarFoto('autos')" class="">Control CDA´S</a></li>
+              <li><a id="obrero" onclick="cambiarFoto('obrero')" class="">Protección de <br>infraestructura<br> critica
                   petrolera</a></li>
             </ul>
           </div>
@@ -451,18 +451,25 @@
             <div class="cuadro-gris"></div>
           </div>
           <div class="col-sm-3 recuadro-azul position-relative">
-            <div class="txt-recuadro-azul">
-              <ul>
-                <li>Upstream</li>
-                <li>Midstream</li>
-                <li>Downstream</li>
-                <li>Retail</li>
+            <div id="recuadro" class="txt-recuadro-azul">
+              <div id="informacion" class="info txt-informacion">
+                <h1 id="txt-mercado"></h1>
+                <p class=""></p>
+                <div class="btn-flecha">
+                  <a type="button" onclick="flecha('chafle')"><i class="fas fa-arrow-down"></i></a>
+                </div>
+              </div>
+              <ul id="lista">
+                <li id="Upstream" class="" onclick="ocultarTextoMap('txt-1')">Upstream</li>
+                <li id="Midstream" class="" onclick="ocultarTextoMap('txt-2')">Midstream</li>
+                <li id="Downstream" class="" onclick="ocultarTextoMap('txt-3')">Downstream</li>
+                <li id="Retail" class="" onclick="ocultarTextoMap('txt-4')">Retail</li>
               </ul>
             </div>
           </div>
         </div>
         <div class="map">
-          <img src="img/mapa.PNG" alt="">
+
         </div>
       </div>
     </section>
@@ -510,7 +517,7 @@
                 <li><a type="button" onclick="MostrarContenido('titulo')" class="btn-menu"
                     data-pushbar-target="pushbar-menu">Plantas
                     Digitales</a></li>
-                <li><a type="button" onclick="MostrarContenido('titulo-two')" class="btn-menu"
+                <li><a type="button" onclick="MostrarContenido('titulo')" class="btn-menu"
                     data-pushbar-target="pushbar-menu">Aseguramiento Ambiental-APM</a></li>
                 </li>
                 <li><a type="button" onclick="MostrarContenido('titulo-tre')" class="btn-menu"
@@ -532,34 +539,6 @@
         </div>
       </div>
     </section>
-    <!--seccion plantas digitales-->
-    <section>
-      <div class="container position-relative" id="footer">
-        <img class="rounded mx-auto d-block ama" src="img/platntas digitales/ingeniera_03.png" alt="">
-        <div class="position-absolute top-24 end-24">
-          <img src="img/platntas digitales/burbuja.png" alt="">
-          <div class="col  position-absolute top-10 end-0">
-            <p class="parrafos burbuja">Marcando la diferencia en la innovación digital de la nueva era energética</p>
-          </div>
-        </div>
-        <div class="amarillo-minsaid">
-          <div class="row dest">
-            <div class="col text-center">
-              <img src="img/platntas digitales/Oil & Gas-02.svg " width="40%" alt="">
-            </div>
-            <div class="col text-center">
-              <img src="img/platntas digitales/Oil & Gas-01.svg" width="40%" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="text-center">
-          <h2 class="titulos">Ver más</h2>
-          <a href="#carrusel">
-            <img class="rounded mx-auto d-block" src="img/platntas digitales/boton abajo-01.svg" width="6%" alt="">
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
   <!--seccion toggle-->
   <section>
@@ -574,18 +553,21 @@
             <h2 class="plant titulos" id="titulos"></h2>
             <div class="lib-regis">
               <h1 id="title-libreria" class="titulos">Librería de Registro</h1>
-              <p class="desarrollo">
-                Se propone el desarrollo de un texto que <br> de manera comercial resuma el <br> subproducto.
+              <!--parrafo libreria y registro-->
+              <p id="p-toggle-1" class=" desarrollo">
+                [monitorización actividad de Planta, eventos provenientes de sistemas en tiempo real o de diferentes
+                áreas funcionales, actividades operacionales, alarmas, informes] y Gestión de Turnos [estado de la
+                Planta, eventos y actividades relevantes turno anterior y siguiente]
               </p>
             </div>
           </div>
           <div class="col-sm-3 menu">
             <div class="position-relative  regis-li">
               <ul>
-                <li><a type="btn" onclick="contentLibreriaRegistro('title-1')">Librería de Registro</a></li>
-                <li><a type="btn" onclick="contentLibreriaRegistro('title-2')">Rutinas de operación </a></li>
-                <li><a type="btn" onclick="contentLibreriaRegistro('title-3')">Incidencias de operación</a></li>
-                <li><a type="btn" onclick="contentLibreriaRegistro('title-4')">Generación de órdenes</a></li>
+                <li><a id="li-1" type="btn" onclick="contentLibreriaRegistro('title-1')">Librería de Registro</a></li>
+                <li><a id="li-2" type="btn" onclick="contentLibreriaRegistro('title-2')">Rutinas de operación </a></li>
+                <li><a id="li-3" type="btn" onclick="contentLibreriaRegistro('title-3')">Incidencias de operación</a></li>
+                <li><a id="li-4" type="btn" onclick="contentLibreriaRegistro('title-4')">Generación de órdenes</a></li>
               </ul>
             </div>
           </div>
@@ -618,6 +600,31 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="container position-relative" id="footer">
+        <img class="rounded mx-auto d-block ama" src="img/platntas digitales/ingeniera_03.png" alt="">
+        <div class="position-absolute top-24 end-24">
+          <img src="img/platntas digitales/burbuja.png" alt="">
+          <div class="col  position-absolute top-10 end-0">
+            <p class="parrafos burbuja">Marcando la diferencia en la innovación digital de la nueva era energética</p>
+          </div>
+        </div>
+        <div class="amarillo-minsaid">
+          <div class="row dest">
+            <div class="col text-center">
+              <img src="img/platntas digitales/Oil & Gas-02.svg " width="40%" alt="">
+            </div>
+            <div class="col text-center">
+              <img src="img/platntas digitales/Oil & Gas-01.svg" width="40%" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <h2 class="titulos">Ver más</h2>
+          <a href="#carrusel">
+            <img class="rounded mx-auto d-block" src="img/platntas digitales/boton abajo-01.svg" width="6%" alt="">
+          </a>
         </div>
       </div>
     </div>
