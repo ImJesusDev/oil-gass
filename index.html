@@ -475,7 +475,7 @@
     </section>
     <!--seccion de puertos-->
     <section>
-      <div class="container position-relative">
+      <div class="container position-relative" id="animate-left">
         <div class="row">
           <div class="col-sm-9">
             <div class="cuadro-rosado">
@@ -517,7 +517,7 @@
                 <li><a type="button" onclick="MostrarContenido('titulo')" class="btn-menu"
                     data-pushbar-target="pushbar-menu">Plantas
                     Digitales</a></li>
-                <li><a type="button" onclick="MostrarContenido('titulo')" class="btn-menu"
+                <li><a type="button" onclick="MostrarContenido('titulo-two')" class="btn-menu"
                     data-pushbar-target="pushbar-menu">Aseguramiento Ambiental-APM</a></li>
                 </li>
                 <li><a type="button" onclick="MostrarContenido('titulo-tre')" class="btn-menu"
@@ -543,7 +543,7 @@
   <!--seccion toggle-->
   <section>
     <div data-pushbar-id="pushbar-menu" data-pushbar-direction="right" class="pushbar from_left pushbar-menu">
-      <div class="btn-cerrar">
+      <div class="btn-cerrar" id="close-pushbar">
         <button data-pushbar-close><i class="fas fa-times"></i></button>
       </div>
       <div class="container">
@@ -552,22 +552,15 @@
             <div class="cuadro-azul-oscuro"></div>
             <h2 class="plant titulos" id="titulos"></h2>
             <div class="lib-regis">
-              <h1 id="title-libreria" class="titulos">Librería de Registro</h1>
+              <h1 id="main-title" class="titulos"></h1>
               <!--parrafo libreria y registro-->
               <p id="p-toggle-1" class=" desarrollo">
-                [monitorización actividad de Planta, eventos provenientes de sistemas en tiempo real o de diferentes
-                áreas funcionales, actividades operacionales, alarmas, informes] y Gestión de Turnos [estado de la
-                Planta, eventos y actividades relevantes turno anterior y siguiente]
               </p>
             </div>
           </div>
           <div class="col-sm-3 menu">
             <div class="position-relative  regis-li">
               <ul>
-                <li><a id="li-1" type="btn" onclick="contentLibreriaRegistro('title-1')">Librería de Registro</a></li>
-                <li><a id="li-2" type="btn" onclick="contentLibreriaRegistro('title-2')">Rutinas de operación </a></li>
-                <li><a id="li-3" type="btn" onclick="contentLibreriaRegistro('title-3')">Incidencias de operación</a></li>
-                <li><a id="li-4" type="btn" onclick="contentLibreriaRegistro('title-4')">Generación de órdenes</a></li>
               </ul>
             </div>
           </div>

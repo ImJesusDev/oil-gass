@@ -1,0 +1,133 @@
+{
+  "plantasDigitales" : {
+    "titulo": "Plantas Digitales",
+    "lista": [
+      {
+        "titulo": "Libro de Registros",
+        "texto": "[monitorización actividad de Planta, eventos provenientes de sistemas en tiempo real o de diferentes áreas funcionales, actividades operacionales, alarmas, informes] y Gestión de Turnos [estado de la Planta, eventos y actividades relevantes turno anterior y siguiente]  "
+      },
+      {
+        "titulo": "Rutinas de Operación, Rondas de Inspección.",
+        "texto": "Configuración y generación de tareas [periódicas o generadas por sistemas de tiempo real], rutas, registro de actividades "
+      },
+      {
+        "titulo": "Incidencias de Operación.",
+        "texto": "Registro, seguimiento, investigación [efectos, causas, acciones correctivas], generación solicitudes de trabajo  "
+      },
+      {
+        "titulo": "Generación de Ordenes de Trabajo. ",
+        "texto": "Manuales [durante Rondas o desde el Libro de Registros] y automáticas [sistemas en tiempo real por disparo de alarmas], se integra con solución de mantenimiento disponible "
+      },
+      {
+        "titulo": "Seguridad en Planta y Permisos de Trabajo",
+        "texto": "Soporte a los procesos de gestión y control de tareas peligrosas. Definición de alcance, identificación de riesgos, generación de documentos, registro condiciones HSE y trazabilidad bloqueo-tarjeteo, gestión autorizaciones, \"handover\", cierre "
+      }
+    ]
+  },
+  "aseguramientoAmbiental": {
+    "titulo": "Aseguramiento Ambiental",
+    "lista": [
+      {
+        "titulo": "Gestión de Mediciones y Alarmas",
+        "texto": "Adquisición de información y monitoreo de variables en tiempo real, alarmas automáticas configurables,  definición de reglas automáticas de validación, validación manual final cumplimiento, trazabilidad, generación automática alertas a varios niveles en casos críticos, generación de informes periódicos "
+      },
+      {
+        "titulo": "Gestión de Residuos",
+        "texto": "Caracterización, Registro [generación, almacenamiento, tratamiento directo o con terceros], Control de tiempos de transporte-tratamiento, Generación de informes internos y oficiales [RSE, KPIs]"
+      },
+      {
+        "titulo": "Detección temprana de vertimiento de hidrocarburos en el mar. ",
+        "texto": "Detección 100% automática. Disponible 24x7. Respuesta temprana, aún de pequeños volúmenes. Información detallada [seguimiento, contención, auditoría]"
+      }
+    ]
+  },
+  "seguridadActivosEstrategicos": {
+    "titulo" : "Seguridad de Activos Estratégicos",
+    "lista": [
+      {
+        "titulo": "Sabotaje  ",
+        "texto": "Actos de trabajadores y contratistas para afectar activos operativos durante conflictos laborales o en acatamiento directrices externas o en solidaridad con organizaciones afines "
+      },
+      {
+        "titulo": "Terrorismo",
+        "texto": " Actos de organizaciones al margen de la Ley para generar debilitamiento del establecimiento [reducción de ingresos, afectación percepción de seguridad], pretender cobros extorsivos o generar caos [desestabilización para fortalecer estructuras criminales] "
+      },
+      {
+        "titulo": "Conflicto internacional. ",
+        "texto": "Alineado con MinDefensa, aprovechando y complementando recursos disponibles "
+      },
+      {
+        "titulo": "Tecnológicos",
+        "texto": "Riesgos de Ciberseguridad OT-IT. Aseguramiento integral siguiendo protocolos internacionales. "
+      },
+      {
+        "titulo": "Naturales",
+        "texto": "Geotécnicos, hidrología, sismicidad "
+      }
+    ]
+  },
+  "seguridadElectronica": {
+    "titulo" : "Seguridad Electrónica",
+    "lista": [
+      {
+        "titulo": "Control de accesos-bioseguridad. ",
+        "texto": "Tarjetas de proximidad, lectoras biométricas, RFID (identificación por radio frecuencia), según necesidades particulares. Registro de movimientos dentro de una facilidad. Integración con sensores para apoyar controles de bioseguridad  "
+      },
+      {
+        "titulo": "Sistemas anti - intrusión. ",
+        "texto": "Sensores [fibra óptica, analítica de video, cámaras térmicas, sensores de movimiento, drones, anti-drones] según condiciones de cada sitio, para detección oportuna intentos de ingreso o aproximación no autorizadas, posibilidad de supervisión de áreas remotas "
+      },
+      {
+        "titulo": "Video vigilancia.",
+        "texto": "Cámaras [fijas o móviles, ópticas o térmicas], analítica de video para detección automatizada de condiciones anómalas o situaciones de riesgo, aprovechamiento de la información "
+      },
+      {
+        "titulo": "Seguimiento de Activos y Personas en Tiempo Real. ",
+        "texto": "Etiquetado de activos y personas en tiempo real  "
+      },
+      {
+        "titulo": "Respuesta Técnica Remota. ",
+        "texto": "Activación remota de dispositivos de respuesta en sitio. Bloqueo o apertura de puertas, activación sistemas de iluminación, perifoneo, etc. "
+      }
+    ]
+  },
+  "gestionDeActivos": {
+    "titulo" : "Gestión de Activos ",
+    "lista": [
+      {
+        "titulo": "Predictivo",
+        "texto": "Mantenimiento basado en condición. Desarrollo de modelos y monitoreo continuo con instrumentos disponibles. Machine Learning multivariable. Detección Temprana de fallas. Comportamientos anómalos, capacidad de detección multi fallo. Complemento a CMS existentes. Facilidad de uso. "
+      },
+      {
+        "titulo": "Salud de Activos. ",
+        "texto": "Monitoreo índices de salud de equipos. Definición modos de falla. Matriz de Riesgos [Análisis de criticidad por consecuencias y probabilidad]. Optimización del mantenimiento basado en índices de salud y modos de fallo. Optimización del ciclo de vida [vida útil remanente, decisiones reemplazo óptimo de activos] "
+      }
+    ]
+  },
+  "eficienciaEnergerica": {
+    "titulo" : "Eficiencia Energética ",
+    "lista": [
+      {
+        "titulo": "Análisis de desviaciones.  ",
+        "texto": "Detección de ineficiencias, comparación entre valores esperados y valores medidos [información de diseño, registros históricos, simulación]. Gestión de KPIs de desempeño energético "
+      },
+      {
+        "titulo": "Cuantificación de pérdidas y oportunidades. ",
+        "texto": "Escenarios \"what if\" para análisis costo-beneficio de medidas a implementar  "
+      },
+      {
+        "titulo": "Vigilancia 24x7, detección y corrección  ",
+        "texto": "[alertas y alarmas, diseño  mejoras, instalación de controles, modificación de procesos, vigilancia de la degradación]  "
+      }
+    ]
+  },
+  "gestionVolumetrica": {
+    "titulo" : "Gestión Volumétrica",
+    "lista": [
+      {
+        "titulo": "I-DAQ: ",
+        "texto": "Solución tecnológica eficiente y confiable para el registro y trazabilidad permanente de los volúmenes de crudos y productos manejados a través de los diferentes procesos  del puerto, que brinda información permanente del inventario y de las operaciones para garantizar una y gestión volumétrica efectiva. Complementa a bajo costo la información de inventarios y movimientos, en tiempo real, para asegurar un control integral de inventarios y balances."
+      }
+    ]
+  }
+}
